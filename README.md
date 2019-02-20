@@ -1,8 +1,6 @@
-# Criu
+# criu.gem
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/criu`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A libcriu wrapper for CRuby
 
 ## Installation
 
@@ -20,9 +18,32 @@ Or install it yourself as:
 
     $ gem install criu
 
+### Required platform
+
+Linux only.
+
+### Required package
+
+libcriu (bundled with `criu` package in many case)
+
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+CRIU.new(
+  images_dir: '/tmp/process_dump'
+)
+CRIU.target_pid = 123
+CRIU.dump
+```
+
+or
+
+```ruby
+CRIU.new(
+  images_dir: '/tmp/process_dump'
+)
+CRIU.restore
+```
 
 ## Development
 
