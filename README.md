@@ -1,5 +1,7 @@
 # criu.gem
 
+[![Gem Version](https://badge.fury.io/rb/criu.svg)](https://badge.fury.io/rb/criu)
+
 A libcriu wrapper for CRuby
 
 ## Installation
