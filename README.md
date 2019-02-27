@@ -32,7 +32,7 @@ libcriu (bundled with `criu` package in many case)
 
 ```ruby
 CRIU.images_dir = '/tmp/process_dump'
-CRIU.target_pid = 123
+CRIU.pid = 123
 CRIU.dump
 ```
 
