@@ -31,9 +31,7 @@ libcriu (bundled with `criu` package in many case)
 ## Usage
 
 ```ruby
-CRIU.new(
-  images_dir: '/tmp/process_dump'
-)
+CRIU.images_dir = '/tmp/process_dump'
 CRIU.target_pid = 123
 CRIU.dump
 ```
@@ -41,9 +39,7 @@ CRIU.dump
 or
 
 ```ruby
-CRIU.new(
-  images_dir: '/tmp/process_dump'
-)
+CRIU.images_dir = '/tmp/process_dump'
 CRIU.restore
 ```
 
